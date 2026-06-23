@@ -837,11 +837,17 @@ Al configurar `levels = c("Normal", "Tumor"),` se le indica al paquete que:
 
 -   Condición 2: "Tumor" (por ser el segundo nivel)
 
-Por lo que posteriormente, para el cálculo del estadístico M (Log-Fold Change), NOISeq calcula el log-ratio (M) como la diferencia logarítmica entre la Condición 1 y la Condición 2
+Por lo que posteriormente, para el cálculo del estadístico M (Log-Fold Change), NOISeq calcula el log-ratio (M) como la diferencia logarítmica entre la Condición 1 y la Condición 2:
 
-M=log2(Normal/Tumor)
+M = log2(condicion1) - log2(condicion2);
 
-Por la tanto, la interpretación de los resultados será dependiendo del valor de M en la tabla de resultados ([mynoiseq\@results](mailto:mynoiseq@results){.email}):
+M = log2(Normal) - log2(Tumor);
+
+M = log2(Normal/Tumor) = log2FC;
+
+FC = Normal/Tumor
+
+Por la tanto, la interpretación de los resultados será dependiendo del valor de M en la tabla de resultados:
 
 -   M \> 0 (Positivo): El gen tiene una mayor expresión en las muestras "Sanas"
 -   M \< 0 (Negativo): El gen tiene una mayor expresión en las muestras "Tumorales"
