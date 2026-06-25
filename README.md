@@ -128,9 +128,9 @@ El script de R asume la presencia de los siguientes archivos en una carpeta loca
 ## Uso
 
 Descargar los datos de entrada y colocarlos en el directorio de trabajo o en una carpeta data/, siguiendo las indicaciones de las rutas del propio pipelina.
-Abrir TFM_DorantesBenitez.Rmd en RStudio y ejecutar los chunks secuencialmente (las secciones más largas permiten guardar/cargar objetos intermedios en .RData para evitar recomputar pasos costosos).
+Abrir `TFM_DorantesBenitez.Rmd` en RStudio y ejecutar los chunks secuencialmente (las secciones más largas permiten guardar/cargar objetos intermedios en .RData para evitar recomputar pasos costosos).
 Exportar la lista de smORFs candidatos y sus secuencias peptídicas.
-Cargar dichas secuencias en AlphaFoldGenerico_DorantesBenitez.ipynb (idealmente en Google Colab) para obtener las predicciones estructurales.
+Cargar dichas secuencias en `AlphaFoldGenerico_DorantesBenitez.ipynb` (idealmente en Google Colab) para obtener las predicciones estructurales.
 
 
 
